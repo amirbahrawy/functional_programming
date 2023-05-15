@@ -1,7 +1,7 @@
-import 'lesson_number.dart';
+import 'implementation.dart';
 
 void main(List<String> arguments) {
-  LessonNumber lesson = LessonNumber();
+  Implementation implementation = Implementation();
   //we can use the call method without its name using () operator
-  lesson();
+  implementation();
 }
