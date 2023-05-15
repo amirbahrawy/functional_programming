@@ -9,3 +9,15 @@ int subtractTen(x) {
 int square(x) {
   return x * x;
 }
+
+double test1(double x) {
+  return x / 2;
+}
+
+double test2(double x) {
+  return x / 4 + 1;
+}
+
+double test3(Function f, double value) {
+  return f(value) + value;
+}
