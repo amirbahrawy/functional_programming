@@ -1,6 +1,6 @@
 import 'functions.dart';
 
-class Lesson3 {
+class Implementation {
   List<Function> list = [test1, test2];
   void call() {
     //invoke method normally
