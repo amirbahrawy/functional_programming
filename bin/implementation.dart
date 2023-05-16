@@ -1,6 +1,10 @@
+import 'functions.dart';
+
+// How to make a pipeline of functions in dart
 class Implementation {
+  List<int> data = [7, 4, 5, 6, 3, 8, 10];
+
   void call() {
-    print('Welcome to implementation of functional programming in Dart');
-    print('Switch between branches to see the code of each lesson');
+    data.map(addOne).map(square).map(subtractTen).forEach(print);
   }
 }
