@@ -1,6 +1,8 @@
 class Implementation {
   void call() {
-    print('Welcome to implementation of functional programming in Dart');
-    print('Switch between branches to see the code of each lesson');
+    print(
+        'Just a simple definition of the difference between pipeline and composition');
+    print(
+        'See the video: https://www.youtube.com/watch?v=W3hxweDR25o&list=PLpbZuj8hP-I6F-Zj1Ay8nQ1rMnmFnlK2f&index=6');
   }
 }
