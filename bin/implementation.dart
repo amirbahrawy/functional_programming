@@ -1,6 +1,14 @@
+import 'functions.dart';
+
 class Implementation {
   void call() {
-    print('Welcome to implementation of functional programming in Dart');
-    print('Switch between branches to see the code of each lesson');
+    InvoicingPath invoicePath = InvoicingPath();
+    AvailabilityPath availabilityPath = AvailabilityPath();
+    Tuple<Order, ProcessConfiguration> t = setConfiguration();
+
+    double Function(Order) costOfOrder =
+        calcAdjustedCostOfOrder(t.value, invoicePath, availabilityPath);
+
+    print(costOfOrder(t.key));
   }
 }
