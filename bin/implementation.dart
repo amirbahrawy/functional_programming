@@ -22,6 +22,8 @@ class Implementation {
 
   Iterable<int> oneByOne() sync* {
     for (int item in data) {
+      print('oneByOne called');
+
       yield item;
     }
   }
