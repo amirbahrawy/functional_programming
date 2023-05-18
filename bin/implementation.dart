@@ -2,7 +2,7 @@ import 'functions.dart';
 
 class Implementation {
   List<int> data = [2, 1, 3, 6, 9, 10, 11, 13, 18];
-  void call() async {
+  void call() {
     print(
         'Not make pipeline  for all data because collection is optimal and smart');
     data
@@ -15,13 +15,12 @@ class Implementation {
     print('=======================');
     print(
         'It will not return all data directly it will return one by one and thats collection work');
-    final fetchData = oneByOne();
-    await for (int i in fetchData) {
+    for (int i in oneByOne()) {
       print(i);
     }
   }
 
-  Stream<int> oneByOne() async* {
+  Iterable<int> oneByOne() sync* {
     for (int item in data) {
       yield item;
     }
