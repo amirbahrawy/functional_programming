@@ -16,9 +16,9 @@ class Implementation {
     //Make discount function using higher order functions
     print("==================================");
     print('Discount Method');
-    MapEntry<double, double> Function(int) a = productParametersFood;
-    MapEntry<double, double> Function(int) b = productParametersBeverage;
-    MapEntry<double, double> Function(int) c = productParametersRawMaterial;
+   (double,double) Function(int) a = productParametersFood;
+   (double,double) Function(int) b = productParametersBeverage;
+    (double,double) Function(int) c = productParametersRawMaterial;
     Order r = Order(
       id: 10,
       index: 100,
@@ -26,7 +26,7 @@ class Implementation {
       unitPrice: 4,
     );
     final productType = ProductType.food;
-    MapEntry<double, double> Function(int) productParameter =
+    (double,double) Function(int) productParameter =
         (productType == ProductType.food)
             ? a
             : (productType == ProductType.beverage)
